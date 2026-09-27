@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Freddie</title>
+  <meta name="description" content="A small birthday surprise for Freddie.">
+  <meta name="theme-color" content="#FBF3EF">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='14' fill='%23C4A05A'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Georgia,serif' font-size='17' fill='%23FBF3EF'%3EF%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600&family=Gloock&family=Nanum+Pen+Script&display=swap">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-scene="open">
+  <canvas id="confetti" aria-hidden="true"></canvas>
+
+  <main id="stage">
+
+    <!-- 1. Opening -->
+    <section class="scene scene-open is-active" id="scene-open" aria-labelledby="open-heading">
+      <div class="sky" aria-hidden="true"></div>
+      <div class="open-content">
+        <h1 id="open-heading" class="open-title" data-focus></h1>
+        <p class="open-intro" data-c="opening.intro"></p>
+        <button class="btn btn-primary btn-large" id="btn-start" type="button" data-c="opening.button"></button>
+      </div>
+    </section>
+
+    <!-- 2. Gift box -->
+    <section class="scene scene-gift" id="scene-gift" aria-labelledby="gift-prompt" hidden>
+      <p class="prompt" id="gift-prompt" data-c="gift.prompt" data-focus></p>
+      <button class="gift" id="gift" type="button" aria-label="Open the gift box">
+        <span class="gift-lid"><span class="gift-bow"></span></span>
+        <span class="gift-base"></span>
+        <span class="gift-glow" aria-hidden="true"></span>
+      </button>
+    </section>
+
+    <!-- 3. Letter -->
+    <section class="scene scene-letter" id="scene-letter" aria-labelledby="letter-prompt" hidden>
+      <div class="envelope-wrap" id="envelope-wrap">
+        <p class="prompt" id="letter-prompt" data-c="letter.prompt" data-focus></p>
+        <button class="envelope" id="envelope" type="button" aria-label="Open the envelope">
+          <span class="env-back"></span>
+          <span class="env-paper"></span>
+          <span class="env-pocket"></span>
+          <span class="env-flap"></span>
+          <span class="env-seal">F</span>
+        </button>
+      </div>
+      <article class="letter" id="letter" hidden>
+        <div class="letter-body" id="letter-body"></div>
+        <button class="btn btn-primary letter-next" id="letter-next" type="button" data-c="letter.button" hidden></button>
+      </article>
+    </section>
+
+    <!-- 4. Timeline question -->
+    <section class="scene scene-timeline" id="scene-timeline" aria-labelledby="timeline-q" hidden>
+      <h2 class="scene-title" id="timeline-q" data-c="timeline.question" data-focus></h2>
+      <p class="scene-hint" data-c="timeline.hint"></p>
+      <ol class="timeline" id="timeline"></ol>
+    </section>
+
+    <!-- 5. Message cards -->
+    <section class="scene scene-cards" id="scene-cards" aria-labelledby="cards-heading" hidden>
+      <h2 class="scene-title" id="cards-heading" data-c="cards.heading" data-focus></h2>
+      <p class="scene-hint"><span data-c="cards.hint"></span> <span class="cards-count" id="cards-count" aria-live="polite"></span></p>
+      <div class="notes" id="notes"></div>
+      <button class="btn btn-primary" id="cards-next" type="button" data-c="cards.button" disabled></button>
+    </section>
+
+    <!-- 6. Final surprise -->
+    <section class="scene scene-surprise" id="scene-surprise" aria-labelledby="surprise-heading" hidden>
+      <h2 class="surprise-title" id="surprise-heading" data-c="surprise.heading" data-focus></h2>
+      <button class="btn btn-primary btn-large" id="btn-surprise" type="button" data-c="surprise.button"></button>
+    </section>
+
+    <!-- 7. Video -->
+    <section class="scene scene-video" id="scene-video" aria-labelledby="video-heading" hidden>
+      <h2 class="video-title" id="video-heading" data-c="video.heading" data-focus></h2>
+      <div class="video-frame" id="video-frame">
+        <video id="bday-video" controls playsinline preload="metadata"></video>
+        <button class="video-play" id="video-play" type="button" aria-label="Play the video">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg>
+        </button>
+      </div>
+      <div class="video-error" id="video-error" hidden>
+        <p data-c="video.errorText"></p>
+        <button class="btn btn-ghost" id="video-skip" type="button" data-c="video.skipButton"></button>
+      </div>
+    </section>
+
+    <!-- 8. Final screen -->
+    <section class="scene scene-final" id="scene-final" aria-labelledby="final-heading" hidden>
+      <h2 class="final-title" id="final-heading" data-c="final.heading" data-focus></h2>
+      <div class="final-body" id="final-body"></div>
+      <button class="btn btn-ghost" id="btn-replay" type="button" data-c="final.button"></button>
+    </section>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.all.min.js" defer></script>
+  <script src="js/script.js" defer></script>
+</body>
+</html>
