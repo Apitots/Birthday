@@ -75,14 +75,8 @@ const CONTENT = {
 
 
 const VIDEO_SOURCES = [
-  "assets/video/birthday.mp4",
-  "assets/video/Birthday.mp4",
-  "assets/video/video.mp4",
-  "assets/video/birthday.webm",
-  "assets/video/birthday.mov"
+  "assets/video/HAPPY BIRTHDAY BOI.mp4"
 ];
-
-
 
 (() => {
   "use strict";
