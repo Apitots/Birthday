@@ -1,33 +1,33 @@
 const CONTENT = {
   opening: {
     heading: "Happy Birthday, Freddie!",
-    intro: "I made a small surprise for your birthday. Go through it in order, the last part is the best part.",
+    intro: "May ginawa akong something something para sa birthday mo",
     button: "Start the Surprise"
   },
 
   gift: {
     prompt: "Tap the box.",
     popupTitle: "You found it!",
-    popupText: "Pero hindi pa yan yung surprise.",
+    popupText: "Eme.",
     popupButton: "Continue"
   },
 
   letter: {
-    prompt: "May sulat ka. Tap to open.",
+    prompt: "Ito fr na. Tap to open.",
     greeting: "Freddie,",
     paragraphs: [
-      "[Write your letter here. Each item in this list becomes its own paragraph.]",
-      "[Second paragraph. Add or remove items as you like.]"
+      "Tanda mo na pre, nagiisip nga ako kung tungkod na lang ireregalo ko sayo",
+      "Ang sama ko naman kung ganun kaya ginawan na lang kita nito"
     ],
-    signoff: "[Your sign-off]",
-    name: "[Your name]",
+    signoff: "Nakalbo kakacode nito,",
+    name: "Geon Layosa",
     button: "Continue"
   },
 
   timeline: {
     question: "Kelan tayo unang nagkita?",
     hint: "Pick a month.",
-    // One of these is picked at random every time. PWEDE KA PA DUMAGDAG KASO TINAMAD KA NA
+    // One of these is picked at random every time. PWEDE KA PA DUMAGDAG KASO BAKA MAKALBO KA NA
     responses: [
       "Pwede na yan."
     ],
@@ -42,10 +42,10 @@ const CONTENT = {
     tapLabel: "Tap to open",
     button: "Continue",
     items: [
-      { label: "Something I appreciate about you", message: "[Your message]" },
-      { label: "A random memory",                   message: "[Your message]" },
-      { label: "Something I wish for you",          message: "Sana tuloy-tuloy na pagiging it mo at di ka bumagsak" },
-      { label: "One thing I wanted to say",         message: "[Your message]" }
+      { label: "Something I appreciate about you", message: "I really appreciate na lagi mo akong sinasama sa mga plano niyo, and I hope alam niyo na thankful ako for that." },
+      { label: "A random memory",                   message: "Yung nawala ka nung nagswimming tayo" },
+      { label: "Something I wish for you",          message: "Sana tuloy-tuloy na pagiging IT mo at di ka bumagsak" },
+      { label: "One thing I wanted to say",         message: "Gurang ka na boi" }
     ]
   },
 
@@ -66,9 +66,9 @@ const CONTENT = {
   final: {
     heading: "Happy Birthday, Freddie.",
     paragraphs: [
-      "[Your final message]"
+      "I hope you know how much I appreciate our friendship. I hope this birthday brings you a lot of happiness, good memories, and more moments with the people who care about you. Happy birthday, pre! Thank you for always making me feel included. Here’s to more gala, more kwentuhan, and more memories together."
     ],
-    signoff: "[Your name]",
+    signoff: "Geon Layosa",
     button: "Start over"
   }
 };
