@@ -16,10 +16,10 @@ const CONTENT = {
     prompt: "Ito fr na. Tap to open.",
     greeting: "Freddie,",
     paragraphs: [
-      "Tanda mo na pre, nagiisip nga ako kung tungkod na lang ireregalo ko sayo",
-      "Ang sama ko naman kung ganun kaya ginawan na lang kita nito"
+      "Tanda mo na pre, nagiisip nga ako kung tungkod na lang ireregalo ko sayo.",
+      "Ang sama ko naman kung ganun kaya ginawan na lang kita nito."
     ],
-    signoff: "Nakalbo kakacode nito,",
+    signoff: "Malapit na makalbo kakacode nito,",
     name: "Geon Layosa",
     button: "Continue"
   },
@@ -27,13 +27,13 @@ const CONTENT = {
   timeline: {
     question: "Kelan tayo unang nagkita?",
     hint: "Pick a month.",
-    // One of these is picked at random every time. PWEDE KA PA DUMAGDAG KASO BAKA MAKALBO KA NA
+    // PWEDE KA PA DUMAGDAG KASO BAKA MAKALBO KA NA
     responses: [
       "Pwede na yan."
     ],
     popupButton: "Continue",
-    startYear: 2023, startMonth: 8,  // August 2023
-    endYear: 2024,   endMonth: 7     // July 2024
+    startYear: 2023, startMonth: 8,  
+    endYear: 2024,   endMonth: 7     
   },
 
   cards: {
