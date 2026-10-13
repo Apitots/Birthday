@@ -8,8 +8,8 @@ const CONTENT = {
   gift: {
     prompt: "Tap the box.",
     popupTitle: "You found it!",
-    popupText: "Eme.",
-    popupButton: "Continue"
+    popupText: "Eme, di ko kinaya icode ito HAHA",
+    popupButton: "K fine, sa sunod na bday na lang"
   },
 
   letter: {
@@ -29,7 +29,7 @@ const CONTENT = {
     hint: "Pick a month.",
     // PWEDE KA PA DUMAGDAG KASO BAKA MAKALBO KA NA
     responses: [
-      "Pwede na yan."
+      "Feel ko tama yan"
     ],
     popupButton: "Continue",
     startYear: 2023, startMonth: 8,  
